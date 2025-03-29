@@ -1,0 +1,48 @@
+
+This archive contains Twitter NER and NEL datasets. Descriptions follow.
+
+NEL:
+  ipm_nel.conll  
+
+  This is the crowdsourced NEL data. It's grounded to DBpedia. The columns are as follows:
+
+  token		DBpedia URI		Ritter NER label		Ritter PoS label
+
+  The file is tab separated, in CoNLL format, with line breaks between tweets.
+  Data preserves the tokenisation used in the Ritter datasets.
+  PoS labels are not present for all tweets, but where they could be found in the Ritter
+  data, they're given. In cases where a URI could not be agreed, or was not present in
+  DBpedia, there is a NIL. See the paper for a full description of the methodology.
+
+
+  ipm_nel_gatexml/
+
+  This directory contains the NEL data as GATE XML, including original worker annotations
+  and intermediate data, in various annotation sets.
+
+NER:
+  ritter-ne-eval.conll  
+  ritter-ne-train.conll
+
+  These are the train and evaluation splits used, drawn from the Ritter (2011) dataset
+
+LICENSE:
+  This data is distributed under Creative Commons attribution license, CC-BY 4.0. You must
+  acknowledge the author if you use this data, but apart from that, you're quite
+  free to do most things. See https://creativecommons.org/licenses/by/4.0/legalcode .
+
+
+If you use this dataset, please cite us.
+
+Derczynski, L., Maynard, D., Rizzo, G., van Erp, M., Gorrell, G., Troncy, R., ... & Bontcheva, K. (2015). Analysis of named entity recognition and linking for tweets. Information Processing & Management, 51(2), 32-49.
+
+@article{derczynski2015analysis,
+  title={Analysis of named entity recognition and linking for tweets},
+  author={Derczynski, Leon and Maynard, Diana and Rizzo, Giuseppe and van Erp, Marieke and Gorrell, Genevieve and Troncy, Rapha{\"e}l and Petrak, Johann and Bontcheva, Kalina},
+  journal={Information Processing \& Management},
+  volume={51},
+  number={2},
+  pages={32--49},
+  year={2015},
+  publisher={Elsevier}
+}
